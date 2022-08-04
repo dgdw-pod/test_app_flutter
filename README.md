@@ -1,16 +1,41 @@
 # test_app_flutter
+Test OAuth app written in Flutter
 
-A new Flutter project.
+## Setting up your development environment
 
-## Getting Started
+1. Install rosetta
 
-This project is a starting point for a Flutter application.
+```
+sudo softwareupdate --install-rosetta --agree-to-license
+```
 
-A few resources to get you started if this is your first Flutter project:
+2. Install [Flutter SDK](https://docs.flutter.dev/get-started/install)
+3. Add Flutter to PATH
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+export PATH="$PATH:`pwd`/flutter/bin"
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. Install CocoaPods
+
+```
+sudo gem install cocoapods
+sudo gem uninstall ffi && sudo gem install ffi -- --enable-libffi-alloc
+```
+
+5. Install [Android Studio](https://developer.android.com/studio?gclsrc=aw.ds&gclid=CjwKCAjw3K2XBhAzEiwAmmgrAn97-JRUgf2kzyojCS0IUKsBa9A6uWiqrytVSNdnO5pGnWCK8-xXURoCMQQQAvD_BwE)
+6. Install [Android cmdline-tools](https://developer.android.com/studio/command-line)
+7. Accept outstanding Android licenses
+
+```
+flutter doctor --android-licenses
+```
+
+8. Check Flutter install is working
+
+```
+flutter doctor
+```
+
+9. Install [Visual Studio Code](https://code.visualstudio.com/)
+10. Install [Flutter and Dart plugins](https://docs.flutter.dev/get-started/editor?tab=vscode)
