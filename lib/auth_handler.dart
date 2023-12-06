@@ -41,6 +41,8 @@ class AuthHandler {
         ),
       );
       log('data: $result');
+      log('token: ${result?.accessToken}');
+      debugPrint('token: ${result?.accessToken}');
       final Map<String, dynamic> profile =
           await getUserDetails(result?.accessToken);
       debugPrint('response: $profile');
