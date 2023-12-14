@@ -9,8 +9,7 @@ class Profile extends StatelessWidget {
   final String? picture;
 
   const Profile(this.authHandler, this.onLoggedOut, this.name, this.picture,
-      {Key? key})
-      : super(key: key);
+      {super.key});
 
   @override
   Widget build(BuildContext context) {
